@@ -30,6 +30,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Commit and push
         run: |
+          git config --global user.email "weird-bot@users.noreply.github.com"
+          git config --global user.name "Weird Bot"
           git add .
           git commit -m "Auto comit from bot"
           git push
